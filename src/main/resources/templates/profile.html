@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>User Details</title>
+        <th:block th:include="head :: head"/> 
+    </head>
+    <body id="samples">
+        <div th:replace="menu :: menu"></div>
+
+        <div id="content" class="container">
+
+            <div>
+                <h2>Profile Info for User: <span th:text="${#authentication.principal.fullName}"></span></h2>
+            </div>
+
+           This is your profile
+        </div>
+    </body>
+</html>
